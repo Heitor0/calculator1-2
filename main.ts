@@ -38,6 +38,3 @@ input.onGesture(Gesture.Shake, function () {
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     control.reset()
 })
-basic.forever(function () {
-	
-})
