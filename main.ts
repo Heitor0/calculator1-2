@@ -35,6 +35,9 @@ input.onGesture(Gesture.Shake, function () {
         Var3 = Var1 - Var2
     }
 })
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    control.reset()
+})
 basic.forever(function () {
 	
 })
