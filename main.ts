@@ -16,6 +16,19 @@ input.onButtonPressed(Button.B, function () {
 input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
         . . . . .
+        . . . . .
+        . # # # .
+        . . . . .
+        . . . . .
+        `)
+    basic.showNumber(Var1 - Var2)
+})
+/**
+ * I had a more efficient program earlier on i was unsure if it was the above and beyond program
+ */
+input.onGesture(Gesture.TiltRight, function () {
+    basic.showLeds(`
+        . . . . .
         . . # . .
         . # # # .
         . . # . .
@@ -23,15 +36,9 @@ input.onGesture(Gesture.Shake, function () {
         `)
     basic.showNumber(Var1 + Var2)
 })
-input.onGesture(Gesture.TiltRight, function () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . # # # .
-        . . . . .
-        . . . . .
-        `)
+input.onGesture(Gesture.LogoDown, function () {
     basic.showNumber(Var1 - Var2)
+    basic.showNumber(Var1 + Var2)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showNumber(5)
